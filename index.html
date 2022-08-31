@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">        
+    <form id="info-form" action="">        
         <label for="nombre">
-            <span>¿Cómo te llamas, amigo?</span>
-            <input type="text" id="nombre">
-        </label>
+            <span>¿Cómo te llamas, amigo?*</span>
+            <input type="text" id="nombre" required>
+            <span class="error inactive" id="error-name">Este campo es obligatorio</span>
+        </label>        
         <label for="edad">
-            <span>¿Cuántos años tienes?</span>
-            <input type="number" id="edad">
+            <span>¿Cuántos años tienes?*</span>
+            <input type="number" id="edad" required>
+            <span class="error inactive" id="error-age">Este campo es obligatorio</span>
         </label>
         <label for="cumple">
-            <span>¿Cuál es tu fecha de cumpleaños?</span>
-            <input type="date" id="cumple">
+            <span>¿Cuál es tu fecha de cumpleaños?*</span>
+            <input type="date" id="cumple" required>
+            <span class="error inactive" id="error-birt">Este campo es obligatorio</span>
         </label>
         <button id="btn-add-item">Crear</button>
     </form>
