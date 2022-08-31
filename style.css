@@ -1,7 +1,23 @@
+html{
+    font-family: sans-serif;
+}
+
 #info-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 35%;
+    border: 0px;
+    background-color: darkgrey;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .error{
@@ -26,7 +42,7 @@
 .card{
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-color: burlywood;
     border-radius: 8px; 
     justify-content: center; 
     align-content: center;
