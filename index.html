@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">        
+        <label for="nombre">
+            <span>¿Cómo te llamas, amigo?</span>
+            <input type="text" id="nombre">
+        </label>
+        <label for="edad">
+            <span>¿Cuántos años tienes?</span>
+            <input type="number" id="edad">
+        </label>
+        <label for="cumple">
+            <span>¿Cuál es tu fecha de cumpleaños?</span>
+            <input type="date" id="cumple">
+        </label>
+        <button id="btn-add-item">Crear</button>
+    </form>
+
+    <h1>Listado de amigos</h1>
+    <ul id="list">
+        <li> nombre, edad, fecha cumple </li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+</html>
