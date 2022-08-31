@@ -3,19 +3,27 @@ let txtNombre = document.querySelector("#nombre");
 let numEdad = document.querySelector("#edad");
 let dateCumple = document.querySelector("#cumple");
 let listAmigos = document.querySelector("#list");
-//console.log(txtNombre);
-//console.log(numEdad);
-//console.log(dateCumple);
+
 btnCrear.addEventListener("click", (ev)=>{
     ev.preventDefault();    
+
     if( txtNombre.value!="" && numEdad.value!="" && dateCumple.value!="" ){
         let nuevoNombre = document.createElement("li");
-        nuevoNombre.textContent = txtNombre.value + ", " +  numEdad.value +", "+dateCumple.value;
+        nuevoNombre.innerHTML =  
+        `<div class="card">
+            <h3 id="card-friend-name">${txtNombre.value}</h3>
+            <section id="card-info-container">
+                <p>Edad: <span id="span-age"> ${numEdad.value} </span> </p>
+                <p><span id="span-birt"> ${dateCumple.value} </span>  </p>
+            </section>                
+        </div>`;        
         listAmigos.appendChild(nuevoNombre);
         txtNombre.value="";
         numEdad.value="";
         dateCumple.value="";
     }
+
+   
 
     if(txtNombre.value==""){
         let errorMsg = document.querySelector("#error-name");

@@ -17,3 +17,30 @@
 .inactive{
     visibility: hidden;
 }
+
+#list{
+    list-style-type: none;
+    padding-inline-start: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 8px; 
+    justify-content: center; 
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    font-weight: bolder;
+    text-align: center; 
+}
+
+.card section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
